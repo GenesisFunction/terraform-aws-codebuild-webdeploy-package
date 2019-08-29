@@ -106,10 +106,10 @@ phases:
     commands:
       - nuget restore
       - ${local.build_command}
-      - ls -Recurse "C:${var.artifact_path}"
+      - ls -Recurse "C:\${var.artifact_path}"
 artifacts:
   files:
-    - '${var.artifact_path}\*.zip'
+    - '\${var.artifact_path}\*.zip'
 BUILDSPEC
 
   }

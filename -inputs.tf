@@ -31,9 +31,9 @@ variable "artifact_name" {
 }
 
 variable "artifact_path" {
-  description = "Path to use in container for build as well as appended to artifact_name for full prefix, must start with, and use, backslashes"
+  description = "Path to use in container for build as well as appended to artifact_name for full prefix, if more than one folder, must start without slash and separate folders with backslashes"
   type        = string
-  default     = "\\artifacts"
+  default     = "artifacts"
 }
 
 variable "artifact_s3_bucket_id" {
