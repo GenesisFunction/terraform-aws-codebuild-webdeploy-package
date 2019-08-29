@@ -10,9 +10,9 @@ NOTE: If using a private repo, you need to manually set up authentication (and c
 ### Example Usage:
 Create a cluster with a single service, mapped to a single task, which has a single container:
 ```
-module "codebuild_webdeploy_rightslineintegration" {
+module "codebuild_webdeploy_app_name" {
   source  = "GenesisFunction/codebuild-webdeploy-package/aws"
-  version = "1.0.0"
+  version = "1.0.1"
   #source  = "github.com/GenesisFunction/terraform-aws-codebuild-webdeploy-package"
   
   codebuild_name         = "app-name"
