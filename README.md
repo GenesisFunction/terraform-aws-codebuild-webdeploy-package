@@ -12,7 +12,7 @@ Create a cluster with a single service, mapped to a single task, which has a sin
 ```
 module "codebuild_webdeploy_app_name" {
   source  = "GenesisFunction/codebuild-webdeploy-package/aws"
-  version = "1.0.1"
+  version = "1.0.2"
   #source  = "github.com/GenesisFunction/terraform-aws-codebuild-webdeploy-package"
   
   codebuild_name         = "app-name"
