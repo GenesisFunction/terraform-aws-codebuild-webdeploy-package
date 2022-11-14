@@ -25,10 +25,10 @@ variable "git_clone_depth" {
   default     = 1
 }
 
-variable "artifact_name" {
-  description = "Name of root common prefix in S3 bucket where build artifact will be placed"
-  type        = string
-}
+# variable "artifact_name" {
+#   description = "Name of root common prefix in S3 bucket where build artifact will be placed"
+#   type        = string
+# }
 
 variable "artifact_path" {
   description = "Path to use in container for build as well as appended to artifact_name for full prefix, if more than one folder, must start without slash and separate folders with backslashes"
