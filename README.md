@@ -1,6 +1,6 @@
 <!-- BEGIN_TF_DOCS -->
-# terraform-aws-iam-role-vmimport
-GitHub: [StratusGrid/terraform-aws-iam-role-vmimport](https://github.com/StratusGrid/terraform-aws-iam-role-vmimport)
+# terraform-aws-codebuild-webdeploy-package
+GitHub: [StratusGrid/terraform-aws-codebuild-webdeploy-package](https://github.com/StratusGrid/terraform-aws-codebuild-webdeploy-package)
 
 codebuild-webdeploy-package is used to make a codebuild which will create a web deploy package for a .net application.
 
