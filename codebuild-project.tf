@@ -73,9 +73,9 @@ resource "aws_codebuild_project" "project" {
 
   artifacts {
     type      = "S3"
-    location  = var.artifact_s3_bucket_id       # <- S3 bucket to place artifacts into
-    packaging = "NONE"                          # <- Don't zip artifacts (output of WebDeploy is a zip file)
-    name      = var.codebuild_name              # <- name of zip file in bucket
+    location  = var.artifact_s3_bucket_id # <- S3 bucket to place artifacts into
+    packaging = "NONE"                    # <- Don't zip artifacts (output of WebDeploy is a zip file)
+    name      = var.codebuild_name        # <- name of zip file in bucket
   }
 
   environment {
