@@ -85,15 +85,15 @@ This is your gitignore, and contains a slew of default standards.
 | <a name="input_artifact_path"></a> [artifact\_path](#input\_artifact\_path) | Path to use in container for build as well as appended to artifact\_name for full prefix, if more than one folder, must start without slash and separate folders with backslashes | `string` | `"artifacts"` | no |
 | <a name="input_artifact_s3_bucket_arn"></a> [artifact\_s3\_bucket\_arn](#input\_artifact\_s3\_bucket\_arn) | ARN of S3 Bucket to place artifact into | `string` | n/a | yes |
 | <a name="input_artifact_s3_bucket_id"></a> [artifact\_s3\_bucket\_id](#input\_artifact\_s3\_bucket\_id) | Name of S3 Bucket to place artifact into | `string` | n/a | yes |
-| <a name="input_build_command_override"></a> [build\_command\_override](#input\_build\_command\_override) | MSBuild command to use if overriding default build | `string` | `null` | no |
+| <a name="input_build_command_override"></a> [build\_command\_override](#input\_build\_command\_override) | MSBuild command to use if overriding default build | `string` | `""` | no |
 | <a name="input_build_configuration"></a> [build\_configuration](#input\_build\_configuration) | .Net configuration to use for msbuild, usually release | `string` | `"Release"` | no |
 | <a name="input_build_timeout"></a> [build\_timeout](#input\_build\_timeout) | Timeout in minutes for the build job | `number` | `30` | no |
-| <a name="input_codebuild_description"></a> [codebuild\_description](#input\_codebuild\_description) | Description of codebuild project | `string` | `null` | no |
+| <a name="input_codebuild_description"></a> [codebuild\_description](#input\_codebuild\_description) | Description of codebuild project | `string` | `""` | no |
 | <a name="input_codebuild_name"></a> [codebuild\_name](#input\_codebuild\_name) | Name to be used for Codebuild Project and Role | `string` | n/a | yes |
 | <a name="input_compute_type"></a> [compute\_type](#input\_compute\_type) | Size of build container | `string` | `"BUILD_GENERAL1_MEDIUM"` | no |
 | <a name="input_container_image"></a> [container\_image](#input\_container\_image) | Container image to use for build | `string` | `"mcr.microsoft.com/dotnet/framework/sdk:4.8"` | no |
 | <a name="input_git_clone_depth"></a> [git\_clone\_depth](#input\_git\_clone\_depth) | Depth of clones | `number` | `1` | no |
-| <a name="input_input_tags"></a> [input\_tags](#input\_input\_tags) | Map of tags to apply to resources | `map(string)` | <pre>{<br>  "Developer": "GenesisFunction",<br>  "Provisioner": "Terraform"<br>}</pre> | no |
+| <a name="input_input_tags"></a> [input\_tags](#input\_input\_tags) | Map of tags to apply to resources | `map(string)` | <pre>{<br>  "Developer": "Stratusgrid",<br>  "Provisioner": "Terraform"<br>}</pre> | no |
 | <a name="input_source_location"></a> [source\_location](#input\_source\_location) | This is the http path to the repo, like would be used for git clone | `string` | n/a | yes |
 | <a name="input_source_type"></a> [source\_type](#input\_source\_type) | Must be supported target, like BITBUCKET | `string` | n/a | yes |
 ## Outputs
