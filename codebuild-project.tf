@@ -114,6 +114,6 @@ BUILDSPEC
 
   }
 
-  tags = var.input_tags
+  tags = local.common_tags
 }
 
