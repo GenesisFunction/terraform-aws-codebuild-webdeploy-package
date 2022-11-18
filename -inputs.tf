@@ -6,7 +6,7 @@ variable "codebuild_name" {
 variable "codebuild_description" {
   description = "Description of codebuild project"
   type        = string
-  default     = null
+  default     = ""
 }
 
 variable "source_type" {
@@ -73,14 +73,14 @@ variable "build_configuration" {
 variable "build_command_override" {
   description = "MSBuild command to use if overriding default build"
   type        = string
-  default     = null
+  default     = ""
 }
 
 variable "input_tags" {
   description = "Map of tags to apply to resources"
   type        = map(string)
   default = {
-    Developer   = "GenesisFunction"
+    Developer   = "Stratusgrid"
     Provisioner = "Terraform"
   }
 }
